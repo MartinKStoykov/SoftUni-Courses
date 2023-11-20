@@ -1,6 +1,11 @@
 from abc import ABC, abstractmethod
 
+from project.food import Food
+
+
 class Animal(ABC):
+    WEIGHT_GAIN = 0
+
     def __init__(self, name: str, weight: float, food_eaten: int= 0):
         self.name= name
         self.weight = weight
@@ -11,12 +16,14 @@ class Animal(ABC):
         pass
 
     @abstractmethod
-    def feed(self, food):
+    def edible_food(self):
         pass
 
-    def cant_eat(self, food):
-        return f"{self.__class__.__name__} does not eat {food.__class__.__name__}!"
-
+    def feed(self, food: Food):
+        if food.__class__ not in self.edible_food():
+            return f"{self.__class__.__name__} does not eat {food.__class__.__name__}!"
+        self.weight += self.WEIGHT_GAIN * food.quantity
+        self.food_eaten += food.quantity
 
 class Bird(Animal, ABC):
     def __init__(self, name: str, weight: float, wing_size: float, food_eaten: int= 0,):
