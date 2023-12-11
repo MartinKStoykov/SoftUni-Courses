@@ -36,7 +36,7 @@ class AreaCalculator:
     @shapes.setter
     def shapes(self, value):
         if not isinstance(value, list):
-            raise AssertionError("`shapes` should be of type `list`.")
+            raise AssertionError("`shapes` should be of type `customn_list`.")
 
         self.__shapes = value
 
