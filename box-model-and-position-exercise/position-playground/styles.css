@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.viewport {
+    display: block;
+    position: relative;
+    height: 100vh;
+    
+}
+
+
+.card {
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5em;
+    box-shadow: 0 0 1em 0.1em black;
+}
+
+.card svg {
+    display: block;
+    position: absolute;
+    width: 2em;
+    bottom: 1em;
+    right: 1em;
+    fill: white;
+    
+    
+}
+.viewport:nth-child(1) {
+    
+    background: rgb(52,110,145);
+    background: linear-gradient(90deg, rgba(52,110,145,1) 35%, rgba(0,255,248,1) 96%);
+}
+
+.viewport:nth-child(2) {
+    background: rgb(145,52,101);
+    background: linear-gradient(90deg, rgba(145,52,101,1) 22%, rgba(255,149,0,1) 84%);
+}
