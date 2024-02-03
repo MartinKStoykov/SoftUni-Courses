@@ -1,0 +1,20 @@
+body {
+    margin: 5em;
+}
+
+header {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between
+}
+
+nav {
+    width: 15vw;
+    display: flex;
+    justify-content: space-between;
+}
+a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
+
