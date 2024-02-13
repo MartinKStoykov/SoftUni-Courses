@@ -1,0 +1,35 @@
+section {
+    display: flex;
+}
+
+header, nav, article, footer {
+    background-color: rgb(162, 207, 248);
+    display: flex;
+    margin: 0.4em;
+    border-radius: 0.5em;
+}
+
+header {
+    padding: 0.4em 1em;
+    
+}
+
+article {
+    width: 100%;
+    flex-direction: column;
+    padding-left: 1em;
+}
+
+section > nav > ul {
+    list-style: none;
+    padding: 0.5em;
+    padding-right: 3em;
+    align-items: start;
+    line-height: 30px;
+}
+
+@media (orientation: portrait) {
+    section {
+        flex-direction: column;
+    }
+}

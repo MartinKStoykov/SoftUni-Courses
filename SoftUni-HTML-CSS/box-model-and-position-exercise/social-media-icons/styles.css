@@ -1,0 +1,39 @@
+ul li{
+    background-color: rgb(221, 221, 221);
+    border-radius: 50%;
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+li a svg {
+    width: 1.5em;
+    height: 1.5em;
+    text-decoration: none;
+    margin: 0.5em;
+
+}
+ul {
+    list-style: none;
+}
+
+
+.facebook:hover {
+    fill: rgb(27, 90, 224);
+}
+
+.twitter:hover {
+    fill: rgb(27, 162, 224);
+}
+
+.google-plus:hover {
+    fill: rgb(255, 55, 41);
+}
+
+.linkedin:hover {
+    fill: rgb(65, 157, 185);
+}
+
+.instagram:hover {
+    fill: rgb(119, 148, 211);
+}
